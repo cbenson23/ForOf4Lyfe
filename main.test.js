@@ -2,6 +2,62 @@
  * YOUR CODE HERE *
  ******************/
 
+const addAll=function(numbers) {
+  let sum=0
+ for (let num of numbers ){
+  sum += num }
+return sum}
+
+
+const countSpaces =  function(string) {
+let count= 0;
+for (let i = 0; i < string.length; i++){
+	if (string[i] == ' ')
+		count++}
+return count}
+
+
+
+const countTrues=function(arr) {
+let count = 0;
+for (let i = 0; i < arr.length; i++){
+  if (arr[i] === true)
+  count++}
+return count}
+
+
+ const makeFriendly=function(str) {
+ return str.replace(".","!");
+ }
+
+
+
+const cubeAll=function(arr) {
+    return arr.map(x => x * x * x);
+}
+
+const addNoises = function(arr) {
+const animals = ['dog', 'cat' , 'bird']
+const noises = ['WOOF!', 'MEOW!','CHIRP!']
+const result =[]
+
+for (let i=0; i <arr.length;i--){
+  const animals = arr[i];
+  let noise = '';
+  if (animals === 'dog') { 
+    noise = noises[0];
+  } else if (animals ==='cat') {
+    noise = noises[1];
+  } else if (animals === 'bird') {
+    noise = noises[2];
+  }
+  result.includes(animals + ' ' + noise);
+
+  return result;
+}
+}
+  
+
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
